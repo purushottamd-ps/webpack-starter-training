@@ -1,0 +1,41 @@
+$box-shadow: 0px 4px 8px rgba(69, 38, 143, 0.1); // Without this the buold was failing Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+// Undefined variable.
+// 35 │   box-shadow: $box-shadow;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $box-shadow;
+}
+
+h3 {
+  margin: 0;
+  opacity: 0.5;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 100%;
+  width: 800px;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.joke {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  margin-top: 20px;
+}
